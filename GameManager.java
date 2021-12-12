@@ -9,14 +9,12 @@ class GameManager{
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the no of players?");
         int no_of_players = in.nextInt();
-        Map<String,Integer> positions = new HashMap<>();
         Queue<Player> players = new ArrayDeque<Player>();
         for(int i=0;i<no_of_players;i++){
             System.out.println("Enter the name of the player"+(i+1));
             String name = in.next();
-            Player p = new Player(name,i+1);
+            Player p = new Player(name,0);
             players.add(p);
-            positions.put(name,0);
         }
         Map<Integer,Snakeandladder> snakes = new HashMap<>();
         snakes.put(17,new Snakeandladder(17, 7));
@@ -38,7 +36,7 @@ class GameManager{
         System.out.println("Enter the no of dices?");
         int no_of_dices = in.nextInt();
         Dices dice = new Dices(no_of_dices);
-        Board b = new Board(no_of_players,positions,players,snakes,ladders,dice);
+        Board b = new Board(no_of_players,players,snakes,ladders,dice);
         b.startGame();
     }
 }

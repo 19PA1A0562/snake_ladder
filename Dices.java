@@ -4,6 +4,6 @@ public class Dices {
         this.no_of_dices=no_of_dices;
     }
     public int startRoll(){
-        return (int)(Math.random() * (6*no_of_dices - (no_of_dices+1)))+ no_of_dices;
+        return (int)(Math.random() * (6*no_of_dices - no_of_dices+1)+ no_of_dices);
     }
 }

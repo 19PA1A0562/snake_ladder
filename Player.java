@@ -1,17 +1,20 @@
 public class Player{
     private String name;
-    private int id;
-    Player(String name,int id){
+    private int position;
+    Player(String name,int position){
         this.name=name;
-        this.id=id;
+        this.position = position;
     }
     public String getName(){
         return name;
     }
-    public int getId(){
-        return id;
+    public int getPosition(){
+        return position;
+    }
+    public void setPosition(int position){
+        this.position = position;
     }
     public String toString(){
-        return name+" "+id;
+        return name+" "+position;
     }
 }
