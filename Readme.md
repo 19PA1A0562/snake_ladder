@@ -21,4 +21,4 @@
 6. Continue till the game is over
 
 #### Rule for a Single die
-1. If the the player get continously three times six then the score(position) of the player is zero
+1. If the the player got continously three times six then the score(position) of the player is zero
