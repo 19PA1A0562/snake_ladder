@@ -19,3 +19,6 @@
 4. Enter `number of dices`
 5. `Press any key` on the keyboard when the respective player turns comes in.
 6. Continue till the game is over
+
+#### Rule for a Single die
+1. If the the player get continously three times six then the score(position) of the player is zero
